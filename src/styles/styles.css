@@ -1,3 +1,57 @@
-h1 {
-    color: orange;
-}
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .box-item {
+    padding: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 1em;
+  }
+  
+  .nav-bar {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  }
+  
+  .logo-main {
+    height: 90px;
+  }
+  
+  ul {
+  
+    list-style: none;
+  
+  }
+  
+  
+  body {
+  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+    font-size: 1rem;
+  
+    line-height: 1.6;
+  
+    background-color: #fff;
+  
+    color: #333;
+  
+    padding: 0;
+  
+    margin: 0;
+  
+  }
+  
+  
+  a {
+  
+    color: #3b5998;
+  
+    text-decoration: none;
+  
+  }
+  
+  

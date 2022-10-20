@@ -11,9 +11,10 @@ module.exports = {
   target: 'web',
   devServer: {
     port: '5000',
+    historyApiFallback: true,
     static: {
       directory: path.join(__dirname, 'public')
-},
+    },
     open: true,
     hot: true,
     liveReload: true,
@@ -35,6 +36,10 @@ module.exports = {
             'css-loader',
         ]
       },
+      {
+        test: /\.(png|j?g|svg|gif|webp)?$/,
+        use: 'file-loader?name=./img/[name].[ext]'
+      },    
     ],
   },
   plugins: [
