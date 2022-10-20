@@ -1,5 +1,7 @@
 // Landing page layout
 import React from "react";
+import Jumbotron from "./Jumbotron";
+import defaults from "../../utils/defaults";
 // import { Link, Redirect } from "react-router-dom";
 // import PropTypes from "prop-types";
 // import { connect } from "react-redux";
@@ -9,6 +11,7 @@ const Landing = () => {
   // }
   return (
     <section className="landing">
+      <Jumbotron headline={defaults.jumboHeadline} text={defaults.jumboText} />
       <h1>Landing</h1>
     </section>
   );
