@@ -1,7 +1,46 @@
+p {
+  font-size: 1.2rem;
+  word-wrap: break-word;
+}
+.mid {
+  padding-top: 3%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 3%;
+  word-wrap: break-word;
+}
+.mid p {
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.flex-full {
+  align-self: stretch;
+  flex-basis: 100%;
+  text-align: center;
+  padding: 1em;
+}
+.content-box {
+  background-color: #C5C5C5;
+}
+.content {
+  display: flex;
+  padding: 3em;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25%;
+  /* padding: 1em; */
+}
+.content-img {
+  max-width: 75%;
+}
+.jumbo-content-text {
+}
 .box {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
   }
   
 .box-item {
@@ -23,31 +62,47 @@
 .jumbo-main {
   display: flex;
   flex-direction: column;
-  height: 60vh;
-  width: 100vw;
+  height: 50vh;
+  padding: 1em;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('https://bookpetsitting.com/wp-content/uploads/2021/10/shutterstock_285751451-resized.jpg.webp');
+  background-image: url('https://res.cloudinary.com/dbg1cm3ro/image/upload/v1666376378/jumbo_q32mz5.webp');
+  background-position: 100% 100%;
+  text-align: center;
+  color: #fff;
+  overflow: scroll;
+
 }
 
 .jumbo-head-text {
+  font-size: 2.6em;
+}
 
-  }
 
 .jumbo-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0 auto;
 
-  }
+}
+
 .jumbo-content-text {
-
+  font-size: 1.2rem;
   }
 
 .jumbo-main-img {
   background-size: cover;
 }
 
-.bttn-large {
-  border-radius: 2px;
-  background-color: ;
+.bttn {
+  border-radius: 5px;
+  padding: .5em;
+  background-color: #0693e3;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+  font-size: 1.5em;
 }
   ul {
   
