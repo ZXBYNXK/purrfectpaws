@@ -1,14 +1,14 @@
 {
-  "name": "react-light",
+  "name": "purrfectpaws",
   "version": "1.0.0",
-  "description": "Just a repo for building new react applications, with a more modifiable stack <br> as opposed to using command \"npx create-react-app\".",
+  "description": "Pet Sitting Service",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server .",
     "build": "webpack ."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Reactjs", "Webpack", "Babeljs", "file-loader", "web", "pets"],
+  "author": "Darius Rain",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.19.3",
