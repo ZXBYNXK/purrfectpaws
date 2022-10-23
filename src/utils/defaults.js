@@ -22,7 +22,7 @@ const defaults = {
 
     ],
 
-    services: [
+    landingServices: [
         {
             title: "Pet Sitting",
             text: "We come to YOUR home to pet sit! Our pet sitting service includes options for short visits, dog walking, live-in, and overnight care. We pet sit for almost all animals big and small. We also handle farm animals in some areas. Unfortunately we do not pet sit for snakes. ",
@@ -53,8 +53,32 @@ const defaults = {
             text: "We can clip your pet’s toenails.",
             label: "Grooming Rates"
         }
-    ]
+    ],
+    servicesContent: [
+        {
+            title:"Pet Sitting Visits & Dog Walking",
+            text:[
+                "We’ll send a pet care professional to your home to spend half an hour with your pet to take care of all of their needs including, but not limited to, going on a walk, feeding, litter-box scooping, and play! Your pet won’t get lonely with us while you spend a full day at work.",
+                "Our pet sitting service includes options for short visits, dog walking, live-in, and overnight care.",
+                "Zones are based on the distance between your home and the pet care professional that is coming to visit. Rates are for up to four (4) pets per visit and up to two (2) dogs per dog walk. Visiting pets are an additional $5 per pet per visit.",
+            ],
+            table: {
+                heads:["Doggy Daycare & Boarding Rates", "Single Day"],
+                content: [
+                    ["One (1) Dog", "$50"],
+                    ["Two (2) Dogs", "$60"],
+                ],
+                extra: "LIVE IN CARE- The pet care professional will come and go throughout the day, staying as long as possible, returning as often as possible, + stay overnight from 9 pm to 5 am the next day = $129/daily.  PARTIAL LIVE IN – (This is used on the last day of a live in service) This is the same as a live in but with no overnight. $95 day If you need service into the overnight hours of 9 pm – 5 am then it will be considered a live in. ",
+            },
+            button: {
+                label:"Schedule A Pet Sit!",
+                link:"#"
+            },
+            image: "https://res.cloudinary.com/dbg1cm3ro/image/upload/v1666552121/gr-cat_euwsz0.webp",
 
+        },
+
+    ]
 }
 
 export default defaults;

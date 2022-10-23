@@ -2,12 +2,50 @@ p {
   font-size: 1.2rem;
   word-wrap: break-word;
 }
+table {
+  border-radius: 1px;
+  padding: 0.5em;
+  margin-bottom: 2em;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: wheat;} 
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.service-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.service-text-block {
+}
+
+.service-img {
+position: absolute;
+height: 20vh;
+width: 20vw;
+padding: 0.2rem;
+
+}
 .footer {
   background-color: #333;
-  text-align: center;
   height: 30vh;
   width: 100%;
   color: #fff;
+  text-align: center;
 }
 .mid {
   padding-top: 3%;
