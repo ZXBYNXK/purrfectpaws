@@ -1,5 +1,5 @@
 p {
-  font-size: 1.2rem;
+  font-size: 1em;
   word-wrap: break-word;
 }
 table {
@@ -34,13 +34,24 @@ tr:hover {background-color: wheat;}
 .service-text-block {
 }
 
+.service-title {
+  font-size: 1.7em;
+}
 .service-img {
 position: absolute;
 height: 20vh;
 width: 20vw;
 padding: 0.2rem;
-
 }
+
+.list-item {
+  list-style:disc;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .footer {
   background-color: #333;
   height: 30vh;
@@ -148,7 +159,7 @@ padding: 0.2rem;
   color: #fff;
   border-style: none;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: .9em;
 }
   ul {
   

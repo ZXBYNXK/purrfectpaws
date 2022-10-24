@@ -6,7 +6,7 @@ const Services = () => {
     return (
       <section className="services">
         {
-          defaults.servicesContent.map(content => <Service {...content} key={++keys}/>)
+          defaults.servicesContent.map(content => (<><Service {...content} key={++keys}/> <hr /></>))
         }
       </section>
     );
