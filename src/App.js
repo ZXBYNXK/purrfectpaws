@@ -1,17 +1,30 @@
-import React, { Fragment } from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Landing from './components/layout/Landing';
 import Locations from './components/locations/Locations';
 import Services from './components/services/Services';
 import ContactUs from './components/contact-us/ContactUs';
-import Footer from './components/layout/Footer';
 import "./styles/styles.css"
-function App() {
+
+const App = () => {
+  
+  const {pathname} = useLocation();
+  useEffect(() => {
+    let url = location.href.split("#")
+    let id = url[1] ? url[1] : false;
+    if (id) {
+      let el = document.getElementById(id) 
+      console.log(el)
+      el.scrollIntoView();
+
+    } else {
+      window.scrollTo(0,0);
+    }
+  }, [pathname])
+  
   return (
-  <BrowserRouter>
-    <Fragment>
-      <Routes>
+    <Routes>
         <Route path="/" element={<Navbar />} >
           <Route index element={<Landing/>} />
           <Route path="/locations" element={<Locations />} />
@@ -20,10 +33,6 @@ function App() {
           {/* <Route path="*" element={<NoPage />} /> */}
           </Route>
       </Routes>
-      <Footer />
-    </Fragment>
-  </BrowserRouter>
-  
   );
 }
 

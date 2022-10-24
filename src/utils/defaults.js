@@ -26,36 +26,47 @@ const defaults = {
             title: "Pet Sitting",
             text: "We come to YOUR home to pet sit! Our pet sitting service includes options for short visits, dog walking, live-in, and overnight care. We pet sit for almost all animals big and small. We also handle farm animals in some areas. Unfortunately we do not pet sit for snakes. ",
             label: "Pet Sitting Rates",
+            link: "/services#pet-sitting",
         },
         {
             title: "Doggy Daycare",
             text: "Want to have your dog become more socialized while you’re at work? Drop them off at our doggy daycare!",
             label: "Doggy Daycare Rates",
+            link: "/services#boarding",
+
         },
         {
             title: "Pooper Scooper",
             text: "With this service, we come to your home and collect all the dog poop from your yard!",
             label: "Pooper Scooper Rates",
+            link: "/services#pooper-scooper",
+
         },
         {
             title: "Boarding",
             text: "If you’re traveling away for a few nights and would prefer to board your pet, come check out our home facility! (Available in AZ only) ",
             label: "Boarding Rates",
+            link:'/services#boarding'
         },
         {
             title: "Pet Transportation",
             text: "While Uber and Lyft drivers may not accept furry, scaly, or feathery passengers, we offer pet taxi services to help your family make trips to the groomers, vet, airport, and more! We can also do pick-up and drop-off when you board with us!",
             label: "Pet Taxi Rates",
+            link: "/services#pet-transportation",
+
         },
         {
             title: "Grooming",
             text: "We can clip your pet’s toenails.",
-            label: "Grooming Rates"
+            label: "Grooming Rates",
+            link: "/services#grooming",
+
         }
     ],
     servicesContent: [
         {
             title:"Pet Sitting Visits & Dog Walking",
+            id: "pet-sitting",
             text:[
                 "We’ll send a pet care professional to your home to spend half an hour with your pet to take care of all of their needs including, but not limited to, going on a walk, feeding, litter-box scooping, and play! Your pet won’t get lonely with us while you spend a full day at work.",
                 "Our pet sitting service includes options for short visits, dog walking, live-in, and overnight care.",
@@ -71,13 +82,14 @@ const defaults = {
             },
             button: {
                 label:"Schedule A Pet Sit!",
-                link:"#"
+                link:"/contact-us"
             },
             // image: "https://res.cloudinary.com/dbg1cm3ro/image/upload/v1666552121/gr-cat_euwsz0.webp",
 
         },
         {
             title:"Pooper Scooper",
+            id: "pooper-scooper",
             text:[
                 "A pet care professional will come to your property to remove all of the dog poop from your back and side yard! We offer both a prepaid recurring weekly service as well as one-off single visits. ",
                 "Rates are for up to two (2) dogs per visit. Additional dogs are an additional $5 per dog per visit. There is an additional $14 fee per visit for scooping the front yard.",
@@ -91,11 +103,12 @@ const defaults = {
             },
             button: {
                 label:"Let’s Clean Your Yard!",
-                link:"#"
+                link:"/contact-us"
             },
         },
         {
             title:"Doggy Boarding",
+            id: "boarding",
             text:[
                 "Your furry kid(s) can go on a vacation when you do even if they can’t go with you! We provide ’round the clock care with 24-hour supervision. Dog boarding is only available at our Phoenix and Chandler locations in Arizona; we do not use cages.",
                 "The first day is charged at full price regardless of drop-off time. Each day is calculated as 24 hours starting at midnight. The full-day is reserved for your pet(s) because we do not intermix pets from other families.",
@@ -110,21 +123,23 @@ const defaults = {
             },
             button: {
                 label:"Plan Their Next Vacation",
-                link:"#"
+                link:"/contact-us"
             },
         },
         {
             title:"Pet Grooming",
+            id: "grooming",
             text:[
                 "Contact us today and we’ll send a pet care professional to help clip your pet’s toenails!",
             ],
             button: {
                 label:"Schedule Grooming Appointment",
-                link:"#"
+                link:"/contact-us"
             },
         },
         {
             title:"Pet Taxi Transportation",
+            id: "pet-transportation",
             text:[
                 "Does your pet need to go to the vet’s office for their annual checkup and you don’t drive? Call us!",
                 "While Uber and Lyft drivers may not accept furry, scaly, or feathery passengers, we offer pet taxi services to help your family make trips to the groomers, vet, airport, and more! We can also do pick-up and drop-off when you board with us!",
@@ -132,7 +147,7 @@ const defaults = {
             ],
             button: {
                 label:"Request a Pet Taxi",
-                link:"#"
+                link:"/contact-us"
             },
         },
         {
