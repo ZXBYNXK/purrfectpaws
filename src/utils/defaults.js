@@ -221,6 +221,25 @@ const defaults = {
                 }
             ]
         }
+    ],
+
+    locations: [
+        {
+            state: "Arizona",
+            contact: {
+                phone: "(480) 366-4472",
+                phoneRaw:"4803664472",
+            },
+            text: ["We serve the entire East Valley. Our doggy daycare and boarding facilities are in Chandler.",],
+        },
+        {
+            state: "Pennsylvania",
+            contact: {
+                phone: "(412) 400-4531",
+                phoneRaw: "4124004513"
+            },
+            text: ["We serve Pittsburgh and its surrounding areas including, but not limited to: ", "Cranberry Twp., Mars, Avalon, Beechview, Bellevue, Ben Avon Heights, Bloomfield, Brighton Heights, Butler, Carnegie, Carrick, Cheswick, Downtown Pittsburgh, Fox Chapel, Glenshaw, Highland Park, Lawrenceville, McCandless, McKees Rocks, Mt. Washington, North Hills, North Side, Penn Hills, Perry Hwy., Perrysville, Pine Twp., Point Breeze, Oakland, Observatory Hill, Regent Square, Shadyside, Shaler, South Hills, South Park, South Side, Spring Hill, Squirrel Hill, Troy Hill, Wexford, and Seven Fields."]
+        }
     ]
 }
 
