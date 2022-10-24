@@ -1,8 +1,13 @@
 import React from "react";
+import defaults from "../../utils/defaults";
+import Service from "./Service";
 const Services = () => {
+  let keys = 0;
     return (
-      <section>
-        <h1>Services</h1>
+      <section className="services">
+        {
+          defaults.servicesContent.map(content => (<><Service {...content} key={++keys}/> <hr /></>))
+        }
       </section>
     );
 }

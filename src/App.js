@@ -5,6 +5,7 @@ import Landing from './components/layout/Landing';
 import Locations from './components/locations/Locations';
 import Services from './components/services/Services';
 import ContactUs from './components/contact-us/ContactUs';
+import Footer from './components/layout/Footer';
 import "./styles/styles.css"
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
           {/* <Route path="*" element={<NoPage />} /> */}
           </Route>
       </Routes>
+      <Footer />
     </Fragment>
   </BrowserRouter>
+  
   );
 }
 

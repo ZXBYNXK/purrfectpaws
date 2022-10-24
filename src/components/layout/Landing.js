@@ -2,7 +2,8 @@
 import React from "react";
 import Jumbotron from "./Jumbotron";
 import defaults from "../../utils/defaults";
-
+import { Link } from "react-router-dom";
+import Button from "./Button";
 const Landing = () => {
 
   return (
@@ -39,6 +40,31 @@ const Landing = () => {
             <p className="content-text">{content.text}</p>
         </div>)}
       </div>
+
+      <div className="box">
+          <div className="content">
+            <h2>Our Services</h2>
+            <p>
+              Some services are only available to clients in certain locations.
+              <Link to="/services"><span>&nbsp; Check out all services.</span></Link>
+            </p>
+          </div>
+          <div className="box">
+            {
+              defaults.landingServices.map(service => 
+                (
+                  <div className="content">
+                    <Link to="/#"><h2>{service.title}</h2></Link>
+                    <p className="content-text">{service.text}</p>
+                    <Link to="/#">
+                      <Button label={service.label}/>
+                    </Link>
+                  </div>
+                ))
+            }
+          </div>
+      </div>
+
       {/* <h1>Landing</h1> */}
     </section>
   );
