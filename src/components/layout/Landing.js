@@ -4,6 +4,7 @@ import Jumbotron from "./Jumbotron";
 import defaults from "../../utils/defaults";
 import { Link } from "react-router-dom";
 import Button from "./Button";
+import Locations from "../locations/Locations";
 const Landing = () => {
 
   return (
@@ -64,7 +65,7 @@ const Landing = () => {
             }
           </div>
       </div>
-
+      <Locations />
       {/* <h1>Landing</h1> */}
     </section>
   );

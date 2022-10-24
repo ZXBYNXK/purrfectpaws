@@ -13,7 +13,50 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
-tr:hover {background-color: wheat;} 
+tr:hover {background-color: wheat;}
+.conact-us {
+  font-size: 1.3em;
+}
+.conact-us p {
+  color: black;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  height: 70vh;
+}
+.locations-head {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.location {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.location-title {
+  font-size: 1.2em;
+}
+
+.location-text {
+  font-size: 1em;
+  word-break: break-all;
+}
+
+.location-contact {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 .services {
   display: flex;
   flex-direction: column;
@@ -123,12 +166,21 @@ padding: 0.2rem;
   padding: 1em;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('https://res.cloudinary.com/dbg1cm3ro/image/upload/v1666376378/jumbo_q32mz5.webp');
   background-position: 100% 100%;
   text-align: center;
   color: #fff;
   overflow: scroll;
 
+}
+
+.jumbo-main-landing {
+  background-image: url('https://res.cloudinary.com/dbg1cm3ro/image/upload/v1666376378/jumbo_q32mz5.webp');
+}
+
+.jumbo-main-contact-us {
+  background-image: url('https://res.cloudinary.com/dbg1cm3ro/image/upload/v1666579995/dogs-3-large_hzs1s5.webp');
+  background-position: 20% 20%;
+  opacity: 80%;
 }
 
 .jumbo-head-text {
