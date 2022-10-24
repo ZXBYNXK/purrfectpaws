@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../layout/Button";
-const Service = ({title=false, text=false, table=false, button=false, bullets=false}) => {
+const Service = ({title=false, text=false, table=false, button=false, bullets=false, id}) => {
   let keys = 0;
   return (
-    <div className="service">
+    <div className="service" id={id}>
         <hr />
         { title ? (<h1 className="service-title">{title}</h1>) : (<></>) }
         <hr />

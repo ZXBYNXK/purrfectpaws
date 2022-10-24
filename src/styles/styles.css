@@ -39,6 +39,8 @@ tr:hover {background-color: wheat;}
 .form input, select, textarea {
   border-style: solid;
   width: 88%;
+  padding: 5px;
+  font-size: large;
 }
 .form textarea {
   max-width: 88%;
@@ -89,6 +91,7 @@ tr:hover {background-color: wheat;}
 .services {
   display: flex;
   flex-direction: column;
+  
 }
 
 .service {
@@ -96,12 +99,15 @@ tr:hover {background-color: wheat;}
   flex-direction: column;
   width: 50%;
   margin: 0 auto;
+  /* height: 100vh; */
+  /* height: 100vh; */
+  margin-bottom: 15%;
 }
 
 .service-block {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .service-text-block {
 }

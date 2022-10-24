@@ -55,9 +55,9 @@ const Landing = () => {
               defaults.landingServices.map(service => 
                 (
                   <div className="content">
-                    <Link to="/#"><h2>{service.title}</h2></Link>
+                    <Link to={service.link}><h2>{service.title}</h2></Link>
                     <p className="content-text">{service.text}</p>
-                    <Link to="/#">
+                    <Link to={service.link}>
                       <Button label={service.label}/>
                     </Link>
                   </div>
