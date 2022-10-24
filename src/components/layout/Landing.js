@@ -10,7 +10,7 @@ const Landing = () => {
   return (
     <section className="landing">
       
-      <Jumbotron headline={defaults.jumboHeadline} text={defaults.jumboText} />
+      <Jumbotron headline={defaults.jumboLandingHeadline} text={defaults.jumboLandingText} />
 
       <div className="mid">
         <p>
