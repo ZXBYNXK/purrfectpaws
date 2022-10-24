@@ -14,19 +14,48 @@ th, td {
   border-bottom: 1px solid #ddd;
 }
 tr:hover {background-color: wheat;}
+
+
+
 .conact-us {
   font-size: 1.3em;
 }
+
 .conact-us p {
   color: black;
 }
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.form input, select, textarea {
+  border-style: solid;
+  width: 88%;
+}
+.form textarea {
+  max-width: 88%;
+  min-width: 88%;
+  min-height: 25vh;
+}
+/* 
+.about-you-form-content {
+} */
+
+
 
 .locations {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-around;
-  height: 70vh;
 }
 .locations-head {
   margin: 0 auto;
