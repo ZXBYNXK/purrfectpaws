@@ -51,6 +51,16 @@ tr:hover {background-color: wheat;}
 .about-you-form-content {
 } */
 
+.alert-box {
+  font-size: large;
+}
+
+.alert-success {
+  color: aquamarine;
+}
+.alert-danger {
+  color: red;
+}
 
 
 .locations {
