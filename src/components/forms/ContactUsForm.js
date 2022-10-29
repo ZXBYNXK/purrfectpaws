@@ -4,6 +4,7 @@ import Button from "../layout/Button";
 import AboutYouForm from "./AboutYouForm";
 import ServiceRequestForm from "./ServiceRequestForm";
 
+
 const date = Date.now();
 
 const initialState = {
@@ -43,7 +44,7 @@ const ContactUsForm = () => {
         el.preventDefault();
         try {
             setFormData({...initialState, submitted: true, success: true})
-            let res = await api.post("/contact-us", formData);
+            let res = await api.post("http://localhost:3000/contact-us", formData);
             console.log(res.body);
         } catch (err) {
             console.error(err);
