@@ -12,7 +12,8 @@ const AboutYouForm = ({form=true, handleChange, props}) => {
                 type="text" 
                 autoComplete="given-name" 
                 value={props.firstName} 
-                onChange={handleChange} 
+                onChange={handleChange}
+                placeholder="Jane"
                 required
             /> <br />
             
@@ -22,7 +23,8 @@ const AboutYouForm = ({form=true, handleChange, props}) => {
                 type="text" 
                 autoComplete="family-name" 
                 value={props.lastName} 
-                onChange={handleChange} 
+                onChange={handleChange}
+                placeholder="Doe"
                 required
             /> <br />
             
@@ -32,7 +34,8 @@ const AboutYouForm = ({form=true, handleChange, props}) => {
                 type="email" 
                 autoComplete="email" 
                 value={props.email} 
-                onChange={handleChange} 
+                onChange={handleChange}
+                placeholder="JaneDoe@email.com"
                 required
             /> <br />
             
@@ -42,7 +45,8 @@ const AboutYouForm = ({form=true, handleChange, props}) => {
                 type="tel" 
                 autoComplete="tel" 
                 value={props.phone} 
-                onChange={handleChange} 
+                onChange={handleChange}
+                placeholder="(xxx)-xxx-xxxx"
                 required
             /> <br />
             
@@ -52,7 +56,8 @@ const AboutYouForm = ({form=true, handleChange, props}) => {
                 type="text" 
                 autoComplete="address-line1" 
                 value={props.addressLine1} 
-                onChange={handleChange} 
+                onChange={handleChange}
+                placeholder="123 State Ave"
                 required
             /> <br />
             
@@ -61,7 +66,8 @@ const AboutYouForm = ({form=true, handleChange, props}) => {
                 name="addressLine2"
                 type="select" 
                 autoComplete="address-line2" 
-                value={props.addressLine2} 
+                value={props.addressLine2}
+                placeholder="Apt #1 (Optional)"
                 onChange={handleChange} 
             /> <br />
             
@@ -70,9 +76,10 @@ const AboutYouForm = ({form=true, handleChange, props}) => {
                 name="locationState" 
                 id="state" 
                 value={props.locationState} 
-                onChange={handleChange} 
+                onChange={handleChange}
                 required
             >
+                <option value="">Select State</option>
                 <option value="Arizona">Arizona</option>
                 <option value="Pennsylvania">Pennsylvania</option>
             </select> <br />
@@ -83,6 +90,7 @@ const AboutYouForm = ({form=true, handleChange, props}) => {
                 type="text" 
                 value={props.locationCity}
                 onChange={handleChange}
+                placeholder="Phoenix/Pittsburgh"
                 required
             /> <br />
             
@@ -92,11 +100,22 @@ const AboutYouForm = ({form=true, handleChange, props}) => {
                 type="text" 
                 autoComplete="address-line2" 
                 value={props.locationZip} 
-                onChange={handleChange} 
+                onChange={handleChange}
+                placeholder="12345"
                 required/> <br />
         </div>
     );
-    return form ? (<form  className="form" action="#">{inputs}</form>) : (inputs);
+
+    return form ? (
+        <form  
+            className="form" 
+            action="#"
+        >
+            {inputs}
+        </form>
+    ) : (
+        inputs
+    );
         
 }
 export default AboutYouForm;
