@@ -47,6 +47,7 @@ const ContactUsForm = () => {
                 ...formData,
                 selectedPetSitters: [...formData.selectedPetSitters, el.target.value]
             })
+            
         } else {
             el.target.className = "unselected pet-sitter-select"
             setFormData({
@@ -81,7 +82,7 @@ const ContactUsForm = () => {
             if (el.target.name === "selectedPetSitters") {
                 return setFormData({
                     ...formData,
-                    selectedPetSitters: new Set([...selectedPetSitters, e.target.value])
+                    selectedPetSitters: new Set([...formData.selectedPetSitters, e.target.value])
                 })
             } else {
                 return setFormData({

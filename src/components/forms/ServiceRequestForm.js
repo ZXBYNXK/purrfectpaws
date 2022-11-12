@@ -40,7 +40,7 @@ const ServiceRequestForm = ({form=true, handleChange, handleSelect, props}) => {
                         >
                             {
                                 props.petSitters.map(petSitter => (
-                                    <option className="unselected pet-sitter-select" key={petSitter._id} value={petSitter.email} onClick={handleSelect}>
+                                    <option className="unselected pet-sitter-select" key={petSitter._id} value={`${petSitter.email}:${petSitter.firstName}`} onClick={handleSelect}>
                                         <img className="pet-sitter-avatar" src={petSitter.avatar}></img>
                                         <br /> {petSitter.firstName}
                                     </option>)
