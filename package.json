@@ -4,7 +4,7 @@
   "description": "Pet Sitting Service",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server .",
+    "start": "GENERATE_SOURCEMAP=false webpack-dev-server .",
     "build": "webpack ."
   },
   "keywords": [

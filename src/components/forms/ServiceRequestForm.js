@@ -1,6 +1,6 @@
 import React from "react";
 
-const ServiceRequestForm = ({form=true, handleChange, props}) => {
+const ServiceRequestForm = ({form=true, handleChange, handleSelect, props}) => {
     
     const inputs = (            
         <div className="form-content">
@@ -12,7 +12,9 @@ const ServiceRequestForm = ({form=true, handleChange, props}) => {
                 name="subject" 
                 onChange={handleChange} 
                 value={props.subject}
+                required
             >
+                <option value="">Select Subject</option>
                 <option value="Pet Sitting or Dog Walking">Pet Sitting or Dog Walking</option>
                 <option value="Pooper Scooper">Pooper Scooper</option>
                 <option value="Doggy Daycare">Doggy Daycare</option>
@@ -24,6 +26,34 @@ const ServiceRequestForm = ({form=true, handleChange, props}) => {
                 <option value="Other">Other</option>
             </select>
             <br />
+
+            { props.search && props.petSitters.length > 0 ?
+                (
+                    <>
+                        <span>Select Pet Sitters </span> <br />
+                        <select 
+                            name="selectedPetSitters" 
+                            onChange={handleChange} 
+                            value={Array(props.selectedPetSitters)}
+                            className="pet-sitter-select-box"
+                            multiple
+                        >
+                            {
+                                props.petSitters.map(petSitter => (
+                                    <option className="unselected pet-sitter-select" key={petSitter._id} value={`${petSitter.email}:${petSitter.firstName}`} onClick={handleSelect}>
+                                        <img className="pet-sitter-avatar" src={petSitter.avatar}></img>
+                                        <br /> {petSitter.firstName}
+                                    </option>)
+                                )
+                            
+                            }
+
+                    </select>
+                    <br />
+                    </>
+                ) : <></>
+
+            }
 
             <span>Day of Service / Service Start Date</span> <br />
             <input 
